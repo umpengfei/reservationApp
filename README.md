@@ -1,22 +1,21 @@
 # reservationApp
 
-## Solution Basic
+## Description
 
-Express framework is used to deal with routes. Unit test is done by Mocha framework. The npm package can be installed through "npm i reservationApp"
+A doctor reservation app. Patients can find doctors' working hours and make reservations. Doctors
+can keep track of their appointments and also create working hours.
 
-## File Structure
+## Tech Stack
 
-- index.js entry of the module
-- routes.js route handlers
-- checker.js contains functions to validate input and other assistant functions
-- test folder contains testing code
+Front-end implements React.js and materialize-css, while Back-end uses Express.js and node.js. The test is done by Mocha.
 
-## Project Structure and Usage
+## Project Structure
 
-The project persist all the information into a list of doctor object.
-A doctor object contains the working hour and a list of appointments.
+Front-end: Used BrowserRouter to render different components based on different routes. Implemented different
+component lifecycle methods and handled CORS issues.
 
-When create a new appointment, the server will check whether the doctor exists, whether the desired time is within a working hour, and whether the desired time is already booked by others. If the check passed, a new appointment with the information of patient name and time will be added to the doctor’s appointments list.
+Back-end: Destructed the server into several layers. The API layer, the routes handler layer, the validator layer,
+and dataBase layer.
 
 ## Test
 
